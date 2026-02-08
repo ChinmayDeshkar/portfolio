@@ -7,8 +7,23 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
   color: white;
+
+  background: linear-gradient(270deg, #0d6efd, #6610f2, #6f42c1, #0d6efd);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .hero-title {
   font-size: 3rem;
@@ -196,6 +211,7 @@ body {
   border-radius: 20px;
   font-size: 0.8rem;
   margin-right: 6px;
+  margin-top: 12px;
 }
 
 /* STATUS */
@@ -215,7 +231,7 @@ body {
 }
 
 .status-badge.progress {
-  background: #fff7ed;
+  background: #ffd0c1;
   color: #9a3412;
 }
 
