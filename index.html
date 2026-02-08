@@ -328,3 +328,36 @@
 </body>
 
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.getElementById('nav');
+    const toggler = document.querySelector('.navbar-toggler');
+
+    // Helper to close navbar
+    function closeNavbar() {
+      if (nav.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(nav).hide();
+      }
+    }
+
+    // 1️⃣ Close on navbar link click
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.addEventListener('click', closeNavbar);
+    });
+
+    // 2️⃣ Close when clicking anywhere outside navbar
+    document.addEventListener('click', function (event) {
+      if (
+        nav.classList.contains('show') &&
+        !nav.contains(event.target) &&
+        !toggler.contains(event.target)
+      ) {
+        closeNavbar();
+      }
+    });
+
+    // 3️⃣ Close on scroll
+    window.addEventListener('scroll', closeNavbar);
+  });
+</script>
