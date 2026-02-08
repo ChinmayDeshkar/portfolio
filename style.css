@@ -240,6 +240,19 @@ body {
   height: 8px;
   border-radius: 50%;
   background: currentColor;
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* CONTACT */
