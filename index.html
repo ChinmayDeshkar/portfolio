@@ -1,363 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>Chinmay Deshkar | Java Backend Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinmay Deshkar | Java Backend Developer</title>
+<meta name="description" content="Portfolio of Chinmay Deshkar, Java Backend Developer specializing in Spring Boot microservices.">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Chinmay Deshkar</a>
+<canvas id="bg-canvas"></canvas>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<header>
+  <nav class="wrap">
+    <a href="#top" class="logo">CD<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </nav>
+</header>
 
-            <div id="nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <!-- <li class="nav-item">
-                        <a class="btn btn-primary px-4" href="#contact">Contact</a>
-                    </li> -->
-                </ul>
-            </div>
+<main>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <span class="eyebrow">Available for new opportunities</span>
+      <h1>Hi, I'm <span class="grad">Chinmay Deshkar</span></h1>
+      <div class="role-line"><span id="typed"></span><span class="cursor"></span></div>
+      <p class="summary">Java Backend Developer with around 4 years of experience designing, developing, and maintaining Spring Boot microservices in production environments. I build REST APIs, optimize database operations, and resolve complex backend issues in high-volume systems &mdash; owning modules end to end and collaborating across teams to ship scalable, stable software.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="dot"></span>Pune, Maharashtra</span>
+        <span><span class="dot"></span>+91-7066883294</span>
+        <span><span class="dot"></span>deshkarchinmay42@gmail.com</span>
+      </div>
+    </div>
+    <div class="scroll-cue"><span class="line"></span>Scroll</div>
+  </section>
+
+  <section id="about">
+    <div class="wrap reveal">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a backend engineer focused on the Java / Spring ecosystem, currently working as a Project Engineer at Wipro Technologies where I build and maintain microservices powering high-traffic insurance applications.</p>
+          <p>My day-to-day revolves around designing resilient REST APIs, writing optimized SQL, and hunting down the root cause of production issues rather than patching symptoms. I've become a point of ownership on my team &mdash; coordinating tasks, mentoring developers, and keeping releases smooth across QA, UAT, and Production.</p>
+          <p>Outside of client work, I build full-stack side projects to sharpen skills end-to-end &mdash; from secure authentication to containerized deployments.</p>
         </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero d-flex align-items-center">
-        <div class="container text-center">
-            <h1 class="hero-title reveal">Java Backend Developer</h1>
-            <p class="hero-subtitle reveal delay-1"> Java Backend Developer building scalable, secure, production-ready
-                systems. </p>
-            <div class="mt-4 reveal delay-2">
-                <a href="#projects" class="btn btn-outline-light btn-lg">View Projects</a>
-                <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
-            </div>
+        <div class="stat-card">
+          <div class="stat"><h3>4+</h3><p>Years of Experience</p></div>
+          <div class="stat"><h3>20+</h3><p>Production Issues Resolved</p></div>
+          <div class="stat"><h3>3</h3><p>Environments Deployed (QA/UAT/Prod)</p></div>
+          <div class="stat"><h3>1</h3><p>Full-Stack CRM Shipped</p></div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center reveal">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-text">
-                        Java Backend Developer with <strong>3+ years of experience</strong> building and
-                        supporting enterprise-grade Spring Boot applications. I work extensively on
-                        <strong>REST API development, production issue resolution, database fixes</strong>,
-                        and cross-team collaboration.
-                        <br><br>
-                        Alongside my professional work, I have built <strong>independent projects</strong>
-                        including a CRM platform and an e-commerce application, where I focused on backend
-                        architecture, authentication, and database design. I enjoy owning backend systems
-                        end-to-end and building solutions that are <strong>stable, scalable, and
-                            production-ready</strong>.
-                    </p>
-                </div>
-            </div>
+  <section id="skills">
+    <div class="wrap reveal">
+      <div class="section-label">Toolbox</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Languages</h4>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">SQL</span>
+          </div>
         </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center reveal">Technical Skills</h2>
-
-            <div class="row g-4 mt-4 justify-content-center">
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">Java</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">Spring Boot</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">Microservices</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">REST APIs</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">JWT & Security</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">Hibernate / JPA</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">MySQL</div>
-                </div>
-                <div class="col-md-3 col-6 reveal">
-                    <div class="skill-card">Git & CI/CD</div>
-                </div>
-            </div>
+        <div class="skill-card">
+          <h4>Backend</h4>
+          <div class="tag-row">
+            <span class="tag">Spring Boot</span><span class="tag">Spring MVC</span><span class="tag">Spring Data JPA</span><span class="tag">Hibernate</span><span class="tag">REST APIs</span><span class="tag">Microservices</span>
+          </div>
         </div>
-    </section>
-
-    <!-- ================= EXPERIENCE ================= -->
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <h2 class="section-title text-center reveal">Professional Experience</h2>
-
-            <div class="timeline reveal">
-
-                <!-- TIMELINE ITEM -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h4>Project Engineer</h4>
-                                <p class="company">Wipro Limited · Pune</p>
-                            </div>
-                            <span class="duration">Sep 2022 – Present</span>
-                        </div>
-
-                        <p class="role-summary">
-                            Java Backend Developer working on enterprise-scale Spring Boot applications,
-                            focusing on backend reliability, production stability, and API-driven systems
-                            used by real users.
-                        </p>
-
-                        <div class="experience-grid">
-                            <div class="exp-card">
-                                <h6>Backend Development</h6>
-                                <p>Designed, developed, and enhanced REST APIs using Spring Boot and JPA.</p>
-                            </div>
-
-                            <div class="exp-card">
-                                <h6>Production Support</h6>
-                                <p>Diagnosed and resolved production issues by analyzing logs, code, and database
-                                    records.</p>
-                            </div>
-
-                            <div class="exp-card">
-                                <h6>Cross-Team Collaboration</h6>
-                                <p>Collaborated with QA, frontend, and integration teams to resolve end-to-end issues.
-                                </p>
-                            </div>
-
-                            <div class="exp-card">
-                                <h6>Leadership Exposure</h6>
-                                <p>Mentored junior team members and supported task coordination when required.</p>
-                            </div>
-                        </div>
-
-                        <div class="tech-stack mt-3">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>REST APIs</span>
-                            <span>Hibernate / JPA</span>
-                            <span>MySQL</span>
-                            <span>Git</span>
-                            <span>Bamboo (CI/CD)</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <div class="tag-row">
+            <span class="tag">Angular</span><span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
         </div>
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title text-center reveal">Projects</h2>
-
-            <div class="row g-4 mt-4">
-
-                <!-- PROJECT 1 -->
-                <div class="col-lg-6 reveal">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>Studio Management & Customer App</h4>
-                            <span class="status-badge live"><span class="dot"></span> LIVE</span>
-                        </div>
-
-                        <p class="project-subtitle">
-                            Photography studio workflow & customer-facing application
-                        </p>
-
-                        <ul class="project-list">
-                            <li>Designed and developed a <b>role-based CRM system</b> for creative studios to manage
-                                clients,
-                                projects, employees, and payments.</li>
-
-                            <li>Built <b>RESTful APIs</b> using Spring Boot following layered architecture (Controller,
-                                Service, Repository).</li>
-
-                            <li>Implemented <b>JWT-based</b> authentication and authorization with secure access control
-                                for
-                                Admin and Staff users.</li>
-
-                            <li>Designed relational database schema in <b>PostgreSQL</b>, optimizing queries for
-                                performance and
-                                data integrity.</li>
-
-                            <li>Integrated Angular frontend with <b>backend APIs</b>, ensuring seamless data flow and
-                                responsive UI.</li>
-
-                            <li>Implemented <b>status tracking and workflow management</b> to provide real-time project
-                                visibility.</li>
-
-                            <li>Focused on <b>scalability, maintainability, and clean code practices</b> suitable for
-                                production environments.</li>
-                        </ul>
-
-                        <p class="impact-text">
-                            <strong>Impact:</strong> Actively used by studio staff in daily operations.
-                        </p>
-
-                        <div class="tech-stack">
-                            <span>Java</span><span>Spring Boot</span><span>JWT</span><span>PostgreSQL</span><span>REST
-                                APIs</span><span>API Security</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROJECT 2 -->
-                <div class="col-lg-6 reveal">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <h4>E-Commerce Backend Platform</h4>
-                            <span class="status-badge" style=" background: #ffd0c1;color: #9a3412;"><span
-                                    class="dot"></span> In Progress</span>
-                        </div>
-
-                        <p class="project-subtitle">
-                            Scalable microservices-based backend system
-                        </p>
-
-                        <ul class="project-list">
-                            <li>Developed a full-stack e-commerce application with product browsing, cart management,
-                                and order processing.</li>
-
-                            <li>Built secure authentication using <b>JWT and role-based access</b> for users and admins.
-                            </li>
-
-                            <li>Designed <b>REST APIs</b> for product catalog, cart, orders, and user management.</li>
-
-                            <li>Used <b>MySQL</b> for transactional data handling, ensuring accuracy in orders and
-                                inventory.
-                            </li>
-
-                            <li>Integrated frontend and backend using Angular and Spring Boot, focusing on performance
-                                and UX.</li>
-
-                            <li>Followed production best practices including <b>exception handling, validation, and
-                                    modular
-                                    code structure.</b></li>
-                        </ul>
-
-                        <p class="impact-text">
-                            <strong>Status:</strong> Authentication and product modules completed.
-                        </p>
-
-                        <div class="tech-stack">
-                            <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>REST
-                                APIs</span><span>Full-Stack
-                                Development</span><span>MySQL</span><span>JWT</span><span>Angular</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="skill-card">
+          <h4>Databases</h4>
+          <div class="tag-row">
+            <span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+          </div>
         </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-card reveal">
-                <h2 class="contact-title">Let’s Connect</h2>
-                <p class="contact-text">
-                    Open to backend engineering roles where I can contribute to real products
-                    and solve meaningful problems.
-                </p>
-
-                <div class="contact-grid">
-                    <a href="mailto:deshkarchinmay42@gmail.com" class="contact-item">
-                        <span>Email</span>
-                        <strong>deshkarchinmay42@gmail.com</strong>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/chinmay-deshkar-093b38170/" class="contact-item">
-                        <span>LinkedIn</span>
-                        <strong>linkedin.com/in/chinmay-deshkar</strong>
-                    </a>
-
-                    <a href="https://github.com/ChinmayDeshkar/" class="contact-item">
-                        <span>GitHub</span>
-                        <strong>github.com/chinmay</strong>
-                    </a>
-                </div>
-
-                <p class="contact-meta">
-                    Pune, Maharashtra · Open to Remote / Hybrid
-                </p>
-            </div>
+        <div class="skill-card">
+          <h4>Tools &amp; Platforms</h4>
+          <div class="tag-row">
+            <span class="tag">Docker</span><span class="tag">Git / Bitbucket</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">Splunk</span><span class="tag">Bamboo</span><span class="tag">Maven</span><span class="tag">JSON</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        © 2026 Chinmay Deshkar · Java Backend Developer
-    </footer>
+  <section id="experience">
+    <div class="wrap reveal">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head">
+            <h3>Project Engineer</h3>
+            <span class="period">09/2022 &ndash; Present</span>
+          </div>
+          <div class="tl-org">Wipro Technologies &middot; Pune</div>
+          <ul class="tl-list">
+            <li>Developed and enhanced REST APIs using Spring Boot microservices, supporting high-traffic insurance applications.</li>
+            <li>Designed and maintained backend modules ensuring scalability, performance, and seamless system integration.</li>
+            <li>Diagnosed and resolved 20+ complex production issues by analysing logs, debugging services, and executing optimized SQL queries, reducing recurring failures.</li>
+            <li>Improved application stability by identifying root causes and implementing permanent fixes instead of temporary workarounds.</li>
+            <li>Collaborated with cross-functional teams to troubleshoot API failures and maintain data consistency across integrated systems.</li>
+            <li>Recognized as a key point of ownership within the team, frequently entrusted with leading task coordination, mentoring developers, and driving timely delivery of features and fixes.</li>
+            <li>Contributed to code reviews and backend design discussions to improve code quality and maintainability.</li>
+            <li>Coordinated during release cycles, ensuring smooth deployments and timely delivery of backend features.</li>
+            <li>Used Git and Bitbucket for version control and executed application deployments using Bamboo across QA, UAT, and Production environments, ensuring stable and reliable releases.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
+  <section id="projects">
+    <div class="wrap reveal">
+      <div class="section-label">Selected Work</div>
+      <h2 class="section-title">Personal Projects</h2>
+      <div class="project-card">
+        <div class="project-inner">
+          <h3>StudioTrack CRM</h3>
+          <div class="project-stack">Spring Boot 3 &middot; Angular 14 &middot; PostgreSQL &middot; Docker</div>
+          <div class="project-period">10/2025 &ndash; 01/2026</div>
+          <ul class="tl-list">
+            <li>Designed and built a Spring Boot 3 backend exposing REST APIs for managing customers, purchases, invoices, and reporting in a CRM system.</li>
+            <li>Implemented JWT-based authentication and role-based access control for Admin, Employee, and User roles.</li>
+            <li>Optimized PostgreSQL queries using Spring Data JPA to support efficient reporting and real-time data operations.</li>
+            <li>Implemented exception handling, logging, and CORS configuration to ensure production-ready backend services.</li>
+            <li>Integrated SendGrid for automated email notifications within business workflows.</li>
+            <li>Containerized the backend using Docker and deployed the application to Render.</li>
+            <li>Collaborated on frontend integration (Angular 14) to ensure seamless API consumption and end-to-end functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</html>
+  <section id="education">
+    <div class="wrap reveal">
+      <div class="section-label">Background</div>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <div>
+          <h3>Bachelor of Engineering</h3>
+          <p>Shri Sant Gajanan Maharaj College of Engineering, Shegaon</p>
+        </div>
+        <div class="edu-period">2018 &ndash; 2022</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap reveal contact">
+      <div class="section-label" style="justify-content:center;">Let's Connect</div>
+      <h2>Let's build something reliable together.</h2>
+      <p>Open to backend / full-stack roles and interesting collaborations. Reach out any time &mdash; I usually reply within a day.</p>
+      <div class="contact-links">
+        <a href="mailto:deshkarchinmay42@gmail.com">&#9993; deshkarchinmay42@gmail.com</a>
+        <a href="tel:+917066883294">&#9742; +91-7066883294</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Chinmay Deshkar. Built with care.
+</footer>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const nav = document.getElementById('nav');
-    const toggler = document.querySelector('.navbar-toggler');
+  // Mobile nav toggle
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      burger.classList.remove('open');
+      navLinks.classList.remove('open');
+    });
+  });
 
-    // Helper to close navbar
-    function closeNavbar() {
-      if (nav.classList.contains('show')) {
-        bootstrap.Collapse.getOrCreateInstance(nav).hide();
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Typing effect
+  const roles = ['Java Backend Developer', 'Spring Boot Specialist', 'REST API Engineer', 'Microservices Builder'];
+  const typedEl = document.getElementById('typed');
+  let roleIdx = 0, charIdx = 0, deleting = false;
+
+  function type() {
+    const current = roles[roleIdx];
+    if (!deleting) {
+      charIdx++;
+      typedEl.textContent = current.slice(0, charIdx);
+      if (charIdx === current.length) {
+        deleting = true;
+        setTimeout(type, 1600);
+        return;
+      }
+    } else {
+      charIdx--;
+      typedEl.textContent = current.slice(0, charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        roleIdx = (roleIdx + 1) % roles.length;
       }
     }
+    setTimeout(type, deleting ? 40 : 70);
+  }
+  type();
 
-    // 1️⃣ Close on navbar link click
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', closeNavbar);
-    });
-
-    // 2️⃣ Close when clicking anywhere outside navbar
-    document.addEventListener('click', function (event) {
-      if (
-        nav.classList.contains('show') &&
-        !nav.contains(event.target) &&
-        !toggler.contains(event.target)
-      ) {
-        closeNavbar();
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
       }
     });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
 
-    // 3️⃣ Close on scroll
-    window.addEventListener('scroll', closeNavbar);
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navA = document.querySelectorAll('.nav-links a');
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navA.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => navObserver.observe(s));
+
+  // Header background intensifies on scroll
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    header.style.boxShadow = window.scrollY > 20 ? '0 8px 30px -12px rgba(0,0,0,0.5)' : 'none';
   });
+
+  // Subtle particle background on canvas
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let w, h, particles;
+
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight * 2.2;
+  }
+  function initParticles() {
+    particles = Array.from({ length: 60 }, () => ({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      r: Math.random() * 1.6 + 0.4,
+      vx: (Math.random() - 0.5) * 0.15,
+      vy: (Math.random() - 0.5) * 0.15,
+      hue: Math.random() > 0.5 ? '94,234,212' : '129,140,248'
+    }));
+  }
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    particles.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${p.hue},0.5)`;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  resize();
+  initParticles();
+  draw();
+  window.addEventListener('resize', () => { resize(); initParticles(); });
 </script>
+
+</body>
+</html>
